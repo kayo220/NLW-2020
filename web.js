@@ -50,4 +50,4 @@ server.use(express.static("public"))
 .get("/give-classes", pageGiveClasses)
 .post("/save-classes", pageSaveClasses)
 
-.listen(5500)
+.listen(process.env.PORT || 5500)
